@@ -43,3 +43,12 @@ CLASS_NAMES = ['BG', 'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus'
 # App title and short description
 st.title("OSL")
 st.subheader("Object Segmenting and Labeling")
+
+try:
+    image = st.file_uploader(label="Upload your image:")
+    if image is not None:
+        st.success("Image uploaded successfully")
+        image = Image.open(image)
+        st.image(image, caption="Test Image")
+except ValueError:
+    st.error("Upload failed!")
