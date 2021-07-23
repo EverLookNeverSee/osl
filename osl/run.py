@@ -15,3 +15,11 @@ class MainConfig(config.Config):
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
     NUM_CLASSES = 81
+
+
+# Instantiating model and passing its configuration parameters
+model = model.MaskRCNN(
+    mode="inference",
+    config=MainConfig(),
+    model_dir="./"
+)
