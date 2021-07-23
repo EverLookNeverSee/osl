@@ -23,3 +23,7 @@ model = model.MaskRCNN(
     config=MainConfig(),
     model_dir="./"
 )
+
+# Loading model weights
+weights = "weights/mask_rcnn_coco.h5"
+model.load_weights(filepath=weights, by_name=True)
