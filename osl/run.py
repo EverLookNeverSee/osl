@@ -4,6 +4,7 @@
         - Building web app using streamlit package
 """
 
+import numpy as np
 from PIL import Image
 import streamlit as st
 from mrcnn import model, config, visualize
@@ -50,5 +51,19 @@ try:
         st.success("Image uploaded successfully")
         image = Image.open(image)
         st.image(image, caption="Test Image")
+        image = np.array(image)
+        results = model.detect([image], verbose=0)
+        result = results[0]
+        detected_labels = [CLASS_NAMES[item] for item in result.get("class_ids")]
+        masked_image = visualize.display_instances(image=image,
+                                                   boxes=result['rois'],
+                                                   masks=result['masks'],
+                                                   class_ids=result['class_ids'],
+                                                   class_names=CLASS_NAMES,
+                                                   scores=result['scores'])
+        st.image(masked_image, caption="Masked Image")
+        for item in detected_labels:
+            st.success(item)
+
 except ValueError:
     st.error("Upload failed!")
