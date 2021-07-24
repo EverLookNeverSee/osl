@@ -1,0 +1,10 @@
+numpy>=1.19.5
+tensorflow>=2.5.0
+tensorflow-gpu>=2.5.0
+scipy>=1.7.0
+scikit-image>=0.18.2
+matplotlib>=3.4.2
+ipython>=7.25.0
+streamlit>=0.84.2
+Pillow>=8.3.1
+setuptools>=57.4.0
