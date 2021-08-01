@@ -22,3 +22,5 @@ Object Segmenting and Labeling
 See also the list of [contributors](https://github.com/EverLookNeverSee/osl/graphs/contributors) who participated in this project.
 
 
+## Demo
+You can see [demo version](https://share.streamlit.io/everlookneversee/osl/main/osl/run.py) of the project on [streamlit sharing](share.streamlit.io)
