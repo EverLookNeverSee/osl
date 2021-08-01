@@ -23,7 +23,7 @@ See also the list of [contributors](https://github.com/EverLookNeverSee/osl/grap
 
 
 ## Demo
-You can see [demo version](https://share.streamlit.io/everlookneversee/osl/main/osl/run.py) of the project on [streamlit sharing](share.streamlit.io)
+You can see [demo version](https://share.streamlit.io/everlookneversee/osl/main/osl/run.py) of the project on [streamlit sharing](https://share.streamlit.io)
 
 
 ## Run Locally
