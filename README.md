@@ -1,2 +1,2 @@
-# osl
-Object Segmenting and Labeling
+# OSL
+## Object Segmenting and Labeling
