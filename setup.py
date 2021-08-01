@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="osl",
-    version="0.0.0",
+    version="0.0.1",
     author="Milad Sadeghi DM",
     author_email="EverLookNeverSee@ProtonMail.ch",
     description="Object Segmenting and Labeling",
