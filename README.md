@@ -24,3 +24,30 @@ See also the list of [contributors](https://github.com/EverLookNeverSee/osl/grap
 
 ## Demo
 You can see [demo version](https://share.streamlit.io/everlookneversee/osl/main/osl/run.py) of the project on [streamlit sharing](share.streamlit.io)
+
+
+## Run Locally
+
+Clone the project:
+
+```bash
+  git clone https://github.com/EverLookNeverSee/osl.git
+```
+
+Go to the project directory:
+
+```bash
+  cd osl/
+```
+
+Install the dependencies:
+
+```bash
+  pip3 install -r requirements.txt
+```
+
+Start the server
+
+```bash
+  streamlit run osl/run.py
+```
