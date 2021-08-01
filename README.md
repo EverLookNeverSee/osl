@@ -51,3 +51,7 @@ Start the server
 ```bash
   streamlit run osl/run.py
 ```
+
+
+## License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for more details.
